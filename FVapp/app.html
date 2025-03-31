@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Match Summary</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Football Match Summary</h1>
+      <!-- <label class="voice-toggle">
+        Enable Voice Mode
+        <input type="checkbox" id="voiceMode">
+      </label> -->
+    </header>
+    <nav class="navbar">
+      <ul class="menu">
+          <li><a href="app.html">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Matches ▼</a>
+              <ul class="dropdown-menu">
+                  <li><a href="app.html">Real Madrid vs Barcelona</a></li>
+                  <li><a href="">Manchester United vs Liverpool</a></li>
+              </ul>
+          </li>
+
+          <li class="dropdown">
+              <a href="#">Leagues ▼</a>
+              <ul class="dropdown-menu">
+                  <li class="sub-dropdown">
+                      <a href="#">LaLiga ></a>
+                      <ul class="sub-menu">
+                          <li><a href="">Real Madrid vs Barcelona</a</li>
+                          <li><a href="">Atlatico madrid vs Valencia</a></li>
+                          <li><a href="">Espaniol vs sevilla</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-dropdown">
+                      <a href="#">Premier League></a>
+                      <ul class="sub-menu">
+                        <li><a href="">Manchester United vs Liverpool</a></li>
+                        <li><a href="">Arsenal vs Chelsea</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+
+          <li><a href="app.html">About Us</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Contact ▼</a>
+              <ul class="dropdown-menu">
+                  <li><a href="">Email</a></li>
+                  <li><a href="">Facebook</a></li>
+                  <li><a href=""> Instagram</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+    <nav>
+      <ul>
+        <!-- <li><a href="#overview" class="tab" data-tab="overview">Overview</a></li> -->
+        <li><button class="tab" data-tab="overview">Overview</button></li>
+        <li><button class="tab" data-tab="matchTimeLine">Match TimeLine</button></li>
+        <li><button class="tab" data-tab="performance">Performance</button></li>
+        <li><button class="tab" data-tab="squad">Squad</button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="overview" class="tab-content active">
+        <h2>Overview</h2>
+        <table class="hover-table">
+          <tr>
+            <th>2</th>
+            <th> Goal </th>
+            <th>5</th>
+          </tr>
+          <thead>
+            <tr>
+              <th>Real Madrid</th>
+              <th>VS</th>
+              <th>Barcelona FC </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td > 48.8% </td>
+              <td > Possession </td>
+              <td > 51.2% </td>
+            </tr>
+            <tr>
+              <td > 6 </td>
+              <td > Shoot on target</td>
+              <td > 8 </td>
+            </tr>
+            <tr>
+              <td > 19 </td>
+              <td > Shoot Attempts</td>
+              <td > 14 </td>
+            </tr>
+            <tr>
+              <td > 9 </td>
+              <td > Corner Kick</td>
+              <td > 5 </td>
+            </tr>
+            <tr>
+              <td > 3 </td>
+              <td > Saves</td>
+              <td > 5 </td>
+            </tr>
+            <tr>
+              <td > 5 </td>
+              <td > Yellow Card</td>
+              <td > 4 </td>
+            </tr>
+            <tr>
+              <td > 0 </td>
+              <td > Red Card</td>
+              <td > 1 </td>
+            </tr>
+            <!-- <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <label class="voice-toggle">
+                  Enable Voice Mode
+                  <input type="checkbox" id="voiceMode">
+              </label>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+        <button id="voiceToggle" class="voice-btn">🔊 Voice Mode</button>
+      </section>
+
+      <section id="matchTimeLine" class="tab-content">
+        <h2>Match Timeline</h2>
+        <div class="timeline-container">
+            <!-- Time Markers -->
+            <div class="time-markers">
+                <span class="time-marker" style="left: 16.6%;">15'</span>
+                <span class="time-marker" style="left: 33.3%;">30'</span>
+                <span class="time-marker" style="left: 50%;">45'</span>
+                <span class="time-marker" style="left: 66.6%;">60'</span>
+                <span class="time-marker" style="left: 83.3%;">75'</span>
+                <span class="time-marker" style="left: 100%;">90'</span>
+            </div>
+    
+            <!-- Timeline Lines -->
+            <div class="timeline-lines">
+                <div class="team-name"><img src="rm.jpg" alt="Real Madrid"> Real Madrid</div>
+                <div class="upper-line"></div>
+    
+                <!-- Events for Real Madrid -->
+                 
+                <div class="event goal" style="left: 13%; top: 15px;">⚽</div>
+                <div class="event goal" style="left: 40%; top: 15px;">⚽</div>
+                <div class="event yellow-card" style="left: 50%; top: -15px;">🟨</div>
+                <div class="event yellow-card" style="left: 65%; top: -15px;">🟨</div>
+                <div class="event goal" style="left: 85%; top: 15px;">⚽</div>
+    
+                <div class="team-name2"><img src="bar.jpg" alt="Barcelona" width="20px" height="20px">Barcelona FC</div>
+                <div class="lower-line"></div>
+    
+                <!-- Events for Barcelona -->
+                <div class="event goal" style="left: 20%; top: 30px;">⚽</div>
+                <div class="event goal" style="left: 30%; top: 30px;">⚽</div>
+                <div class="event goal" style="left: 45%; top: 30px;">⚽</div>
+                <div class="event yellow-card" style="left: 60%; top: 60px;">🟨</div>
+                <div class="event red-card" style="left: 70%; top: 60px;">🟥</div>
+                <div class="event yellow-card" style="left: 85%; top: 60px;">🟨</div>
+            </div>
+        </div>
+      </section>
+
+      <section id="performance" class="tab-content">
+        <h2>Performance</h2>
+        <canvas id="performanceChart"></canvas>
+      </section>
+
+      <section id="squad" class="tab-content">
+        <h2>Squad</h2>
+        <!-- <p>.......</p> -->
+         <!-- squad.html -->
+<section id="squad" class="tab-content">
+  <div class="squad-table">
+      <div class="team">
+          <h2>Real Madrid</h2>
+          
+          <ul>
+              <li>Mbappe</li>
+              <li>Vinicius</li>
+              <li>Bellingham</li>
+              <li>Rodrygo</li>
+              <li>Camavinga</li>
+              <li>Valverde</li>
+              <li>Mendy</li>
+              <li>Rüdiger</li>
+              <li>Tchouaméni</li>
+              <li>Vázquez</li>
+              <li>Courtois</li>
+          </ul>
+          <p class="coach"><strong>Coach:</strong> Carlo Ancelotti</p>
+      </div>
+      <div class="team">
+          <h2>Barcelona FC</h2>
+          <ul>
+              <li>Lewandowski</li>
+              <li>Raphinha</li>
+              <li>Gavi</li>
+              <li>Yamal</li>
+              <li>Pedri</li>
+              <li>Casadó</li>
+              <li>Baldé</li>
+              <li>Martinez</li>
+              <li>Cubarsí</li>
+              <li>Koundé</li>
+              <li>Szczęsny</li>
+          </ul>
+          <p class="coach"><strong>Coach:</strong>Hansi Flick</p>
+      </div>
+  </div>
+</section>
+      </section>
+    </main>
+  </div>
+
+  <!-- <style>
+   
+  </style> -->
+
+  <!-- <script>
+    
+  </script> -->
+</body>
+</html>

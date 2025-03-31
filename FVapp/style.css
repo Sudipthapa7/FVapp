@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12;
+    /* background-color: #f4f4f9; */
+    color: #333;
+  }
+
+  .container {
+    width: 100%;
+    /* max-width: 1200px; */
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  .voice-btn {
+    position: fixed;
+    bottom: 20px; /* Keeps it at bottom-right */
+    right: 20px;
+    background-color: #0b0e12;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .voice-btn:hover {
+    background-color: #13171b;
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+  @media (max-width: 767px) {
+    .voice-btn {
+      font-size: 14px;
+      padding: 10px 14px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .voice-toggle {
+    font-size: 16px;
+    padding-left: 200px;
+    display: flex;
+    align-items: end;
+  }
+
+  .voice-toggle input {
+    margin-left: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    background: #282d32;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .tab.active {
+    background: #666e76;
+  }
+
+  main {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .hover-table {
+    width: 100%;
+    padding-right: 0px;
+    border-collapse: collapse;
+  }
+
+  .hover-table th{
+    font-size: xx-large;
+    padding: 20px;
+    text-align: center;
+    border: 1px none;
+  }
+  .hover-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 12;
+    border: 1px none;
+  }
+
+  .hover-table tbody tr:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.02);
+    transition: all 0.2s;
+  }
+  .timeline-container {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+/* Time Markers */
+.time-markers {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.time-marker {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+/* Timeline Lines */
+.timeline-lines {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.upper-line,
+.lower-line {
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    left: 130px;
+    background: green;
+    border-radius: 5px;
+}
+
+.upper-line {
+    top: 10px;
+}
+
+.lower-line {
+    top: 50px;
+}
+
+/* Team Name */
+.team-name, .team-name2 {
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.team-name2{
+  top: 40px;
+  size: 20px;
+}
+.team-name img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Events */
+.event {
+    position: absolute;
+    font-size: 16px;
+    transform: translateX(-50%);
+}
+
+/* Positioning */
+.goal {
+    color: black;
+}
+
+.yellow-card {
+    color: gold;
+}
+
+.red-card {
+    color: red;
+}
+
+
+.squad-table {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+}
+
+.team {
+  width: 45%;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #030608;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 📱 Mobile (Stack Teams Vertically) */
+@media (max-width: 767px) {
+  .squad-table {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team {
+      width: 90%;
+      margin-bottom: 15px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background: #ccc;
+  padding: 0px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: -10px 15px;
+  display: block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu, .sub-menu {
+  font-size: small;
+  display: none;
+  position: absolute;
+  background: #ddd;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  left: 0;
+  top: 100%;
+  width: 150px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu,
+.sub-dropdown:hover .sub-menu {
+  display: block;
+}
+
+/* Submenu Alignment */
+.sub-dropdown {
+  position: relative;
+}
+
+.sub-menu {
+  left: 100%;
+  top: 0;
+}
+
+/* Contact Close Button */
+.close-btn {
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
